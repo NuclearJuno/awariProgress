@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" 
+rel="stylesheet">
+    <title>HTML & CSS</title>
+</head>
+<body>
+    <header >
+        <h2>MANGA ON</h2>
+    
+            <nav><a href="#titulo">.Manga-atual</a>
+                <!--<a href="#article">Article</a>-->
+                <a href="#div-topicos">.Capitulos</a>
+                <a href="#cronograma">.Outros-títulos</a>
+                <a href="#avaliação">.Gostou-?</a>
+                <a href="#midias">.Mais-sobre</a>
+            </nav>
+
+    </header> 
+
+<main>
+    <div id="titulo">
+        <h1>
+            Ler Dorohedoro online 
+        </h1>
+    </div>
+
+    <div>
+        <div id="div-topicos">
+            <h2>
+                Dorohedoro - Mangá
+            </h2>
+                <ol type="I">
+                    <li>
+                        <p>
+                        Capitolos do Mangá
+                        </p>
+                            <ul>
+                                <li>
+                                Cap 1 - Maldição | Kaiman 
+                                </li>
+                                <li>
+                                Cap 2 - Maldição | Inceto faminto
+                                </li>
+                                <li>
+                                Cap 3 - Maldição | O cara do pesadelo
+                                </li>
+                            </ul>
+                    </li>
+                </ol>
+        </div>
+    </div>
+    <div>    
+        <aside id="cronograma">
+            <table>
+                <!--<thead>
+                    tr>
+                        <th>ID</th>
+                        <th>Titulo</th>
+                        <th>Assuntos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1L</td>
+                        <td>1</td>
+                    </tr>-->
+                    <tr colspan="2">
+                        <img
+                        src="https://cdn.plaquiz.xyz/uploads/d/dorohedoro/dorohedoro.jpg" alt="">
+                    </tr>
+                    <tr>
+                        <td>Tradução:</td>
+                        <td>Português / PT-BR</td>
+                    </tr>
+                    <tr>
+                        <td>Autor:</td>
+                        <td>Hayashida, Q</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th colspan="2">
+                        Categorias: Ação, Comédia, Fantasia, Horror, Mangás, Seinen
+                    </th>
+                </tfoot>
+            </table>
+        </aside>
+    </div>
+        <div>
+            <section id="avaliacao">
+                <h2>Comentários</h2>
+                <form action="grid">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome"></div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email"></div>
+                    <!--<div>
+                        <label for="nota">Nota</label>
+                        <select name="nota" id="nota">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>-->
+                    <div>
+                        <label for="comentarios">Comentário</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10">digite aqui!</textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+    <div id="midias" class="midias"> 
+        <h2>Midias</h2>
+                <div>
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.9082245820655!2d-49.1607165247402!3d-25.50810713598647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcf11f2fdf0aeb%3A0x625fc02f792a2347!2sF%C3%AAnix%20G%C3%A1s%20e%20Distribuidora%20de%20Bebidas!5e0!3m2!1spt-BR!2sbr!4v1691014799912!5m2!1spt-BR!2sbr" 
+                    width="45%" 
+                    height="315" 
+                    style="border:0;" 
+                    allowfullscreen=""
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    ></iframe>-->
+                    <embed src="https://www.youtube.com/embed/YlEyJfQ1m3I" 
+                    width="45%"
+                    height="315"
+                    />
+                </div>
+    </div>
+</main>
+</body>
+<footer>
+    <p>Hjjr</p>
+    <p>(❁´◡`❁)</p>
+</footer>
+</html>

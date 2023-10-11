@@ -1,0 +1,170 @@
+:root{
+    --text-color: #e3e3e3;
+    --text-hover: #c2c2c2;
+    --text-dark: #333;
+    --background-color: #0e1724;
+    --table-odd-row: #1e2132;
+    --opacity-black: rgba(255, 255, 255, 0.1);
+    --default-button: mediumblue;
+    --hover-buton: darkblue;
+    --medium-text: 20px
+}
+p, button, input,textarea, td, label {
+    font-family: 'Roboto', sans-serif
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px 12px 32px;
+    box-shadow: 0px 1px 5px 0px var(--opacity-black);
+}
+
+header h2{
+    margin: 0;
+}
+
+header nav a{
+    font-size: var(--medium-text);
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header nav a:hover{
+    color: var(--text-hover);
+    transition: color 0.2s;
+}
+
+main > *{
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+header nav a + a{
+    margin-left: 16px;
+}
+
+main, footer{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main article::after,
+main > div::after,
+main section::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--opacity-black);
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid var(--text-color);
+    padding: 8px;
+
+}
+
+tfoot th{
+    text-align: center;
+}
+
+thead th:nth-child(1){
+    width: 5%;
+}
+
+thead th:nth-child(3){
+    width: 50%;
+}
+
+tbody td:nth-child(1){
+    text-align: center;
+}
+
+tbody tr:nth-child(odd){
+    background-color: var(--table-odd-row);
+    }
+
+
+section form{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 8px;
+margin-bottom: 16px;
+}
+
+section form div{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 18px;
+}
+
+input, select, textarea{
+    padding: 8px 16px;
+    border: 2px solid var(--text-color);
+    border-radius: 8px;
+    color: var(--text-dark);
+    margin-top: 8px;
+}
+textarea{
+    resize: vertical;
+    min-height: 33px;
+    max-height: 80px;
+}
+section form button{
+    border: none;
+    background-color: var(--default-button);
+    font-size: var(--medium-text);
+    border-radius: 8px;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: var(--text-color);
+}
+section form button:hover {
+background-color: var(--hover-buton);
+}
+.midias div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+button:hover{
+    background-color: var(--hover-buton);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    font-weight: bold;
+    font-size: var(--medium-text)
+}
+
+a:visited{
+    color: brown;
+}

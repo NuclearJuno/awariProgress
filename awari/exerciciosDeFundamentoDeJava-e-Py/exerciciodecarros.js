@@ -1,7 +1,7 @@
 class Carro {
-    constructor(modelo, placa, cor, quilometragem, valorDiario, ps){
+    constructor(modelo, placa, cor, quilometragem, valorDiario, ps) {
         this.modelo = modelo;
-        this.palca = placa;
+        this.placa = placa;
         this.cor = cor;
         this.quilometragem = quilometragem;
         this.valorDiario = valorDiario;
@@ -9,7 +9,7 @@ class Carro {
     }
 }
 class Esportivo extends Carro {
-    constructor (modelo, placa, cor, quilometragem, valorDiario, ps, temp, melhorias) {
+    constructor(modelo, placa, cor, quilometragem, valorDiario, ps, temp, melhorias) {
         super(modelo, placa, cor, quilometragem, valorDiario, ps);
         this.temp = temp;
         this.melhorias = melhorias;
@@ -49,14 +49,14 @@ class Colaborador extends Pessoafis {
     }
 }
 class Clientes extends Pessoafis {
-    constructor (nome, id, email, contato, comprovDeRes, cnh, fotoCnh){
-    super(nome, id, email, contato,);
-    this.comprovDeRes = comprovDeRes;
-    this.cnh = cnh;
-    this.fotoCnh = fotoCnh;
+    constructor(nome, id, email, contato, comprovDeRes, cnh, fotoCnh) {
+        super(nome, id, email, contato,);
+        this.comprovDeRes = comprovDeRes;
+        this.cnh = cnh;
+        this.fotoCnh = fotoCnh;
     }
 }
-class Promo{
+class Promo {
     constructor(nomePromo, tipoPromo, vigencia) {
         this.nomePromo = nomePromo;
         this.tipoPromo = tipoPromo;

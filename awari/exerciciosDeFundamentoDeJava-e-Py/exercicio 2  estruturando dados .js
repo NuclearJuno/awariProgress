@@ -5,7 +5,7 @@ var us1 = "maria"
 var us2 = "joao"
 var us3 = "robert"
 var us4 = "alan"
-var us5 = "bida" 
+var us5 = "bida"
 
 //vetores, filas e pilhas e como funcionam 
 //VETOR seria uma prateleira de livros 
@@ -31,11 +31,11 @@ numero.push(555); //adicionando um novo elemento na fila na ultima posição
 console.log(numeros);
 
 numeros.shift(); // removendo o elemento na primeira posição da fila 
-console.log(numeros); 
+console.log(numeros);
 
 //PILHA
-//decarar elementos na pilha 
-var livros = ['livro1', 'livros2', 'livro3'] 
+//declarar elementos na pilha 
+var livros = ['livro1', 'livros2', 'livro3']
 console.log(livros);
 
 livros.unshift('livros4'); //adicionando elementos novo na pilha 
